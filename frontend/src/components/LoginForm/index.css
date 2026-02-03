@@ -1,0 +1,11 @@
+#login-form-wrapper {
+   max-width: 600px;
+}
+
+#login-form-wrapper .form-action-right {
+    text-align: right;
+}
+
+#login-form-wrapper .form-label .ant-form-item-label > label {
+  color: #FFF !important;
+}

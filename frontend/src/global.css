@@ -1,0 +1,67 @@
+/* text alignment */
+.txt-align-center {
+    text-align: center;
+}
+
+
+/* colors */
+.color-white {
+    color: #FFF;
+}
+.color-black {
+    color: #000;
+}
+.color-red {
+    color: #ff0000;
+}
+.color-999 {
+    color: #999;
+}
+
+/* margins */
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.m-all-0 {
+    margin: 0;
+}
+
+/* padding */
+.p-30 {
+    padding: 30px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+.ptb-40 {
+    padding: 40px 0;
+}
+
+
+/* text-aligntment */
+.txt-center {
+    text-align: center;
+}
+
+
+/* font size */
+.ft-size-20 {
+    font-size: 20px; 
+}
+.ft-size-40 {
+    font-size: 40px;
+}
+
+/* cursor */ 
+.curs-pointer {
+    cursor: pointer;
+}

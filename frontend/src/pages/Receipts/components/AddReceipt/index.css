@@ -1,0 +1,60 @@
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.close-btn:hover {
+  opacity: 0.7;
+}
+
+.file-preview-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 15px;
+  margin: 30px auto;
+  width: 80%;
+  background: #fafafa;
+}
+
+.file-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-details {
+  flex: 1;
+}
+
+.file-remove {
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.file-remove:hover {
+  opacity: 1;
+}
+
+.modal-footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

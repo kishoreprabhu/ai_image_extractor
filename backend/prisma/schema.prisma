@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UploadStatus {
+  EXTRACTING
+  EXTRACTED
+  FAILED
+  INVALID
+}
+
+model UserUpload {
+  id           String   @id @default(uuid())
+  userId       String   @map("user_id")
+  fileName     String   @map("file_name")
+  fileType     String   @map("file_type")
+  storagePath  String   @map("storage_path")
+  publicUrl    String   @map("public_url")
+  uploadedAt   DateTime @default(now()) @map("uploaded_at")
+  status       UploadStatus @default(EXTRACTING)
+  
+  /** relations **/
+  extraction   ReceiptExtraction?
+  @@map("user_uploads")
+}
+
+
+model ReceiptExtraction {
+  id           String   @id @default(uuid())
+  uploadId     String   @unique @map("upload_id") 
+  extractedJson Json    @map("extracted_json")
+  createdAt    DateTime @default(now()) @map("created_at") 
+
+  upload       UserUpload @relation(fields: [uploadId], references: [id], onDelete: Cascade)
+  @@map("receipt_extraction")
+}
