@@ -26,4 +26,3 @@
 
    Your backend server should be running on `localhost:3000`, unless a different port is defined in `process.env.PORT`.
 
-   You can check that the server is running correctly by trying the base endpoint `GET http://localhost:3000`, which should return the text "Hello World!"

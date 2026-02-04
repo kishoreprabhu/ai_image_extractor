@@ -18,8 +18,6 @@
 
    The terminal should display the port to view the frontend application in your browser (e.g. `http://localhost:5173/`).
 
-   You can check that the frontend is running correctly by opening the provided url in your browser, where you should see a simple "Hello World" landing page.
-
 ## Credentials
 
 once app is booted, use this username and password to login into app 
