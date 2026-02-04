@@ -1,8 +1,8 @@
-# Engineering Assessment Frontend (React)
+# Frontend (React)
 
 ## Project Initialization
 
-1. `cd` into `engineer-assessment-frontend/`
+1. `cd` into `frontend/`
 
 2. Set your node environment
 
@@ -29,7 +29,3 @@ demo@gmail.com
 
 **Password**
 TestingWorkFlow
-
-## Frontend Requirements
-
-Requirements can be found in the [frontend requirements doc](./requirements-frontend.md), or in `./requirements-frontend.md`

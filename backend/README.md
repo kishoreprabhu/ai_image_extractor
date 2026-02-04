@@ -1,8 +1,8 @@
-# Engineering Assessment Backend (NestJS)
+# Backend (NestJS)
 
 ## Project Initialization
 
-1. `cd` into `engineer-assessment-backend/`
+1. `cd` into `backend/`
 
 2. Set your node environment
 
